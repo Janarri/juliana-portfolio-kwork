@@ -1,88 +1,35 @@
 <!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Юлиана Роуман — ИИ-контент, тексты и визуал</title>
-<meta name="description" content="ИИ-контент, тексты и визуал. Создаю, редактирую и довожу вручную.">
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Юлиана Роуман — ИИ-контент, тексты и визуал</title><meta name="description" content="Создаю контент с помощью ИИ, редактирую и довожу вручную. Смыслы, стиль, качество.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f5ef;--green:#294635;--sage:#b8c1ad;--gray:#b9baba}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:none}body{margin:0;background:var(--bg);color:var(--green);font-family:Arial,Helvetica,sans-serif}.wrap{width:100%}header{position:fixed;z-index:10;top:0;left:0;right:0;height:42px;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between;background:rgba(247,245,239,.88);backdrop-filter:blur(8px);font-size:11px}header .brand{font-weight:700}nav{display:flex;gap:22px}a{color:inherit;text-decoration:none}section.page{transition:background-color .35s ease}
-.page{width:100%;min-height:100vh;min-height:100svh;aspect-ratio:16/9;position:relative;overflow:hidden;background:var(--bg);display:flex;align-items:center;padding:7.5% 10.5%}
-h1,h2,h3,p{margin:0}h1{font-size:clamp(52px,6.3vw,104px);line-height:.87;letter-spacing:-.055em;font-weight:700}h2{font-size:clamp(34px,3.1vw,54px);line-height:1.04;letter-spacing:-.035em;font-weight:700}.sub{font-size:clamp(15px,1.55vw,25px);font-weight:700;color:var(--gray);margin-top:26px}.rule{width:44px;height:3px;background:var(--sage);margin:28px 0}.small{font-size:clamp(12px,1vw,16px);line-height:1.6}.leaf{position:absolute;left:-35px;top:-30px;width:210px;opacity:.32;pointer-events:none}
-.hero{background:url('hero-workspace.jpg') center/100% 100% no-repeat;align-items:flex-start;padding-top:13%}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,246,240,.97) 0%,rgba(248,246,240,.88) 37%,rgba(248,246,240,.15) 67%,transparent)}.hero-copy{position:relative;z-index:1;width:42%}.hero .sub{margin-top:30px}.hero-lines{margin-top:28px;display:grid;gap:12px}
-.approach{background:linear-gradient(90deg,var(--bg) 0 60%,transparent 60%),url('approach-notebook.jpg') right center/47% 100% no-repeat}.approach:after{content:"";position:absolute;right:38%;top:-10%;height:120%;width:15%;background:var(--sage);border-radius:50%;z-index:0}.approach-copy{position:relative;z-index:1;width:58%}.approach h2 span{color:var(--sage)}
-.services{background:linear-gradient(90deg,var(--bg) 0 60%,transparent 60%),url('services-stilllife.jpg') right center/48% 100% no-repeat}.services:after{content:"";position:absolute;right:38%;top:-8%;width:17%;height:116%;border-radius:50%;background:var(--sage)}.services-copy{position:relative;z-index:1;width:57%}.service-list{display:grid;gap:16px;margin-top:30px;color:#6e746f;font-size:clamp(14px,1.25vw,20px)}
-.process{padding:8% 10.5%;background:linear-gradient(90deg,var(--bg) 0 66%,transparent 66%),url('process-notebook.jpg') right center/35% 100% no-repeat}.process-copy{width:65%;position:relative;z-index:1}.process-list{margin-top:24px;display:grid;gap:13px}.process-row{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}.num{width:34px;height:34px;border-radius:50%;background:#e2e5d9;display:grid;place-items:center;font-size:12px;font-weight:bold}.process-row b{font-size:clamp(12px,.95vw,15px)}.process-row p{font-size:clamp(10px,.75vw,12px);margin-top:6px;color:#68716b}
-.works{display:block;padding:7% 4.2% 4%;background:var(--bg)}.works h2{font-size:clamp(36px,3.2vw,52px)}.works .intro{font-size:clamp(11px,.8vw,13px);margin:20px 0 22px;max-width:500px}.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.work{background:#e6e7df}.work img{width:100%;height:clamp(130px,17vw,245px);object-fit:cover;display:block}.work-text{padding:14px}.work h3{font-size:clamp(13px,1vw,17px);margin-bottom:9px}.work p{font-size:clamp(9px,.7vw,11px);line-height:1.45;color:#59645c}
-.contact{background:linear-gradient(90deg,var(--bg) 0 61%,transparent 61%),url('contact-stilllife.jpg') right center/43% 100% no-repeat}.contact-copy{width:55%;position:relative;z-index:1}.contact h2 span{color:var(--sage)}.contact ul{list-style:none;padding:0;margin:20px 0;display:grid;gap:9px}.contact li{font-size:clamp(12px,1vw,16px)}footer{display:none}
-@media(max-width:700px){header{position:absolute;height:auto;padding:14px 5%;align-items:flex-start}nav{gap:8px;flex-wrap:wrap;justify-content:flex-end;font-size:9px}.page{aspect-ratio:auto;min-height:100svh;padding:100px 8% 60px}.hero{background-size:100% 100%;background-position:center}.hero-copy{width:85%}.hero h1{font-size:clamp(58px,12vw,82px)}.hero:before{background:linear-gradient(90deg,rgba(248,246,240,.96),rgba(248,246,240,.74) 70%,rgba(248,246,240,.2))}.approach,.services,.process,.contact{background-size:cover;background-position:center;background-blend-mode:normal}.approach{background-image:linear-gradient(rgba(248,246,240,.88),rgba(248,246,240,.88)),url('approach-notebook.jpg')}.services{background-image:linear-gradient(rgba(248,246,240,.88),rgba(248,246,240,.88)),url('services-stilllife.jpg')}.process{background-image:linear-gradient(rgba(248,246,240,.9),rgba(248,246,240,.9)),url('process-notebook.jpg')}.contact{background-image:linear-gradient(rgba(248,246,240,.82),rgba(248,246,240,.82)),url('contact-stilllife.jpg')}.approach:after,.services:after{display:none}.approach-copy,.services-copy,.process-copy,.contact-copy{width:100%}.work-grid{grid-template-columns:1fr 1fr}.works{padding-top:100px}.work img{height:150px}.work-text{padding:10px}}
-
-/* layout repair: remove oversized decorative ovals and prevent anchor headings hiding under fixed nav */
-html{scroll-padding-top:52px}
-.page{scroll-margin-top:42px;min-height:0;aspect-ratio:16/9}
-.approach:after,.services:after{content:none!important;display:none!important}
-.approach{background-color:var(--bg);background-image:linear-gradient(90deg,var(--bg) 0%,var(--bg) 54%,rgba(247,245,239,0) 70%),url('approach-notebook.jpg');background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,46% 100%}
-.services{background-color:var(--bg);background-image:linear-gradient(90deg,var(--bg) 0%,var(--bg) 54%,rgba(247,245,239,0) 70%),url('services-stilllife.jpg');background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,46% 100%}
-.process{background-color:var(--bg);background-image:linear-gradient(90deg,var(--bg) 0%,var(--bg) 59%,rgba(247,245,239,0) 75%),url('process-notebook.jpg');background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,34% 100%}
-.contact{background-color:var(--bg);background-image:linear-gradient(90deg,var(--bg) 0%,var(--bg) 54%,rgba(247,245,239,0) 72%),url('contact-stilllife.jpg');background-repeat:no-repeat;background-position:center,right center;background-size:100% 100%,42% 100%}
-.hero{background-size:cover;background-position:center center}
-@media(min-width:701px){
- .page{height:56.25vw;min-height:680px;max-height:1000px}
- .hero{height:56.25vw}
-}
-@media(max-width:700px){
- .page{height:auto;min-height:100svh;aspect-ratio:auto}
- .approach,.services,.process,.contact{background-size:100% 100%,100% 48%;background-position:center,bottom center}
- .approach,.services,.process,.contact{padding-bottom:52vh}
- .hero{background-size:cover;background-position:58% center}
-}
-
-/* Responsive correction after visual review */
-@media(max-width:900px){
- header{height:44px;padding:0 4%;font-size:10px}
- nav{gap:12px}
- .page{height:auto;min-height:100svh;aspect-ratio:auto;padding:92px 7% 7%;display:flex;align-items:flex-start}
- h1{font-size:clamp(54px,10vw,76px);line-height:.9}
- h2{font-size:clamp(32px,6vw,44px)}
- .small{font-size:14px;line-height:1.65}
- .sub{font-size:17px;margin-top:20px}
- .hero{min-height:100svh;padding-top:22vh;background-size:auto 100%;background-position:62% center}
- .hero-copy{width:min(80%,440px)}
- .hero:before{background:linear-gradient(90deg,rgba(248,246,240,.97) 0%,rgba(248,246,240,.88) 48%,rgba(248,246,240,.25) 100%)}
- .approach,.services,.process,.contact{display:block;min-height:100svh;padding:12vh 7% 54vh;background-color:var(--bg);background-repeat:no-repeat;background-position:center,bottom center;background-size:100% 100%,100% 46%}
- .approach{background-image:linear-gradient(var(--bg),var(--bg)),url('approach-notebook.jpg')}
- .services{background-image:linear-gradient(var(--bg),var(--bg)),url('services-stilllife.jpg')}
- .process{background-image:linear-gradient(var(--bg),var(--bg)),url('process-notebook.jpg')}
- .contact{background-image:linear-gradient(var(--bg),var(--bg)),url('contact-stilllife.jpg')}
- .approach-copy,.services-copy,.process-copy,.contact-copy{width:100%}
- .approach h2,.services h2,.process h2,.contact h2{max-width:430px}
- .service-list{font-size:15px;gap:12px;margin-top:22px}
- .process-list{gap:14px}
- .process-row{grid-template-columns:34px 1fr;gap:12px}
- .num{width:30px;height:30px}
- .process-row b{font-size:14px}
- .process-row p{font-size:12px;line-height:1.5}
- .works{min-height:auto;padding:90px 5% 70px}
- .works .intro{font-size:13px;line-height:1.5}
- .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
- .work img{height:clamp(120px,30vw,210px)}
- .work h3{font-size:14px}
- .work p{font-size:11px}
-}
-@media(max-width:480px){
- header{align-items:center}header .brand{font-size:10px}nav{gap:7px;font-size:8px}
- .page{padding-left:6%;padding-right:6%}
- .hero-copy{width:90%}
- .hero{background-position:58% center}
- .work-grid{grid-template-columns:1fr 1fr}
-}
-</style></head>
-<body><header><a class="brand" href="#top">Юлиана Роуман</a><nav><a href="#approach">Подход</a><a href="#services">Услуги</a><a href="#process">Процесс</a><a href="#works">Примеры</a><a href="#contact">Контакт</a></nav></header><main>
-<section class="page hero" id="top"><div class="hero-copy"><h1>Юлиана<br>Роуман</h1><div class="sub">ИИ-контент, тексты и визуал</div><div class="rule"></div><div class="hero-lines small"><span>Создаю контент с помощью ИИ</span><span>Редактирую и довожу вручную</span><span>Смыслы, стиль, качество</span></div></div></section>
-<section class="page approach" id="approach"><div class="approach-copy"><h2>ИИ помогает.<br><span>Редакторское<br>чувство решает.</span></h2><div class="rule"></div><div class="small" style="display:grid;gap:9px"><p>Использую нейросети для скорости и идей</p><p>Отбираю лучшее и проверяю факты</p><p>Дорабатываю стиль и структуру вручную</p><p>Результат — точный, понятный, живой контент</p></div></div></section>
-<section class="page services" id="services"><div class="services-copy"><h2>Что я могу сделать</h2><div class="rule"></div><div class="service-list"><p>ИИ-статьи с ручной редактурой</p><p>Рерайт и доработка текстов</p><p>Редактура и вычитка</p><p>Генерация изображений и обложек</p></div></div></section>
-<section class="page process" id="process"><div class="process-copy"><h2>Как устроена<br>работа.</h2><div class="process-list"><div class="process-row"><span class="num">01</span><div><b>Бриф и материалы от заказчика</b><p>Понимаю задачу, уточняю цели и собираю исходные данные.</p></div></div><div class="process-row"><span class="num">02</span><div><b>ИИ для черновика и идей</b><p>Использую нейросети, чтобы быстро наметить варианты и текст.</p></div></div><div class="process-row"><span class="num">03</span><div><b>Ручная проверка и доработка</b><p>Редактирую, выверяю факты, усиливаю текст и визуал.</p></div></div><div class="process-row"><span class="num">04</span><div><b>Согласованный результат</b><p>Готовый контент, который решает вашу задачу.</p></div></div></div></div></section>
-<section class="page works" id="works"><h2>Примеры работ</h2><p class="intro">демонстрационные примеры для знакомства с подходом и<br> уровнем качества</p><div class="work-grid"><article class="work"><img src="sample-article.jpg"><div class="work-text"><h3>Статья</h3><p>демонстрационный пример<br>до замены реальной работой</p></div></article><article class="work"><img src="sample-rewrite.jpg"><div class="work-text"><h3>Рерайт до/после</h3><p>демонстрационный пример<br>до замены реальной работой</p></div></article><article class="work"><img src="sample-editing.jpg"><div class="work-text"><h3>Редактура</h3><p>демонстрационный пример<br>до замены реальной работой</p></div></article><article class="work"><img src="sample-ai-visual.jpg"><div class="work-text"><h3>AI-изображение /<br>обложка</h3><p>демонстрационный пример<br>до замены реальной работой</p></div></article></div></section>
-<section class="page contact" id="contact"><div class="contact-copy"><h2>Обсудим<br><span>вашу задачу.</span></h2><div class="rule"></div><b class="small">Чтобы начать, пришлите:</b><ul><li>тему и цель проекта</li><li>аудиторию и ключевые сообщения</li><li>исходные материалы и ссылки</li><li>формат и объём контента</li><li>пожелания по стилю и срок</li></ul><p class="small" style="color:#b4b9aa">Напишите — и я предложу лучшее решение.</p></div></section></main></body>
+:root{--paper:#f6f3ec;--ink:#263d31;--sage:#b8c2ad;--muted:#68766c;--line:#d9ddd2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{width:min(1240px,calc(100% - 9vw));margin:auto}
+header{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--paper)}
+.brand{font-weight:700;letter-spacing:-.03em}nav{display:flex;gap:clamp(14px,3vw,36px);font-size:13px;color:#526257}nav a:hover{color:#9aa88f}
+.hero{min-height:620px;height:min(760px,calc(100svh - 72px));display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:4%;position:relative}
+.hero-copy{padding:35px 0;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#65766a;margin-bottom:28px}
+h1,h2,h3,p{margin:0}h1,h2{font-family:'Playfair Display',serif;font-weight:500;letter-spacing:-.045em}h1{font-size:clamp(64px,8vw,112px);line-height:.91}h2{font-size:clamp(38px,5vw,66px);line-height:1.02}
+.lead{font-size:clamp(17px,1.7vw,22px);line-height:1.55;color:#637368;margin-top:28px;max-width:470px}
+.hero-points{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}.pill{border:1px solid #cbd2c5;border-radius:99px;padding:10px 15px;font-size:12px;color:#405347}
+.hero-visual{height:82%;min-height:420px;position:relative}.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:2px}.hero-visual:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid #b8c2ad;z-index:-1}
+.section{padding:112px 0}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9%;align-items:center}.section-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#879482;margin-bottom:18px}.section-copy p{color:var(--muted);line-height:1.75;font-size:16px}.section-copy .body{margin-top:26px;display:grid;gap:11px}
+.photo-panel{height:440px;position:relative}.photo-panel img{width:100%;height:100%;object-fit:cover}.photo-panel:before{content:"";position:absolute;left:-28px;top:28px;width:70%;height:100%;background:#e6e9df;z-index:-1}
+.services{background:#e9ebe3}.services-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:center}.services-photo{height:440px}.services-photo img{width:100%;height:100%;object-fit:cover}.service-list{margin-top:28px;display:grid;gap:0}.service-list div{padding:17px 0;border-bottom:1px solid #cbd2c5;font-size:18px;display:flex;gap:18px}.service-list span{font-size:11px;color:#91a08c;padding-top:4px}
+.process-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:center}.steps{display:grid;grid-template-columns:1fr 1fr;gap:24px 34px}.step{border-top:1px solid #cbd2c5;padding-top:15px}.step-num{font-size:12px;color:#9aa88f;letter-spacing:.1em}.step h3{font-size:17px;margin:12px 0 8px}.step p{font-size:13px;line-height:1.6;color:var(--muted)}
+.works{background:#e9ebe3}.works-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.works-head p{max-width:350px;font-size:14px;line-height:1.6;color:var(--muted)}.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.work{min-width:0}.work img{width:100%;aspect-ratio:1.15;object-fit:cover}.work h3{font-size:16px;margin:14px 0 7px}.work p{font-size:12px;line-height:1.5;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:10%;align-items:center}.contact-photo{height:460px}.contact-photo img{width:100%;height:100%;object-fit:cover}.contact-list{list-style:none;padding:0;margin:25px 0;display:grid;gap:11px;color:var(--muted);font-size:15px}.contact-list li:before{content:"—";color:#9aa88f;margin-right:10px}.contact-note{font-size:15px;color:#81907f;margin-top:24px}.contact-link{display:inline-block;margin-top:24px;padding:13px 22px;border-radius:99px;background:var(--ink);color:white;font-size:13px}
+footer{padding:25px 0;border-top:1px solid var(--line);font-size:12px;color:#7b877d}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}header{height:auto;min-height:66px;align-items:flex-start;padding:18px 0;flex-direction:column;gap:13px}nav{width:100%;overflow:auto;gap:20px;padding-bottom:3px;white-space:nowrap;font-size:12px}.hero{height:auto;min-height:0;display:flex;flex-direction:column;align-items:stretch;gap:30px;padding:54px 0 75px}.hero-copy{padding:0}.eyebrow{margin-bottom:18px}h1{font-size:clamp(58px,15vw,86px)}.lead{margin-top:20px;font-size:17px}.hero-points{margin-top:22px}.hero-visual{height:clamp(270px,75vw,430px);min-height:0;margin-right:10px}.hero-visual:after{inset:12px -10px -12px 12px}.section{padding:72px 0}.intro-grid,.services-grid,.process-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.photo-panel,.services-photo,.contact-photo{height:clamp(260px,70vw,390px)}.section-copy p{font-size:15px}.services-grid .section-copy{order:0}.services-photo{order:1}.service-list div{font-size:16px;padding:14px 0}.steps{gap:22px 18px}.step h3{font-size:15px}.works-head{display:block}.works-head p{margin-top:15px}.work-grid{grid-template-columns:1fr 1fr;gap:24px 14px}.work img{aspect-ratio:1/1}.work h3{font-size:14px}.contact-grid{gap:28px}.contact-photo{order:-1}}
+</style></head><body>
+<header class="wrap"><a class="brand" href="#top">Юлиана Роуман</a><nav><a href="#about">Подход</a><a href="#services">Услуги</a><a href="#process">Процесс</a><a href="#works">Примеры</a><a href="#contact">Контакт</a></nav></header>
+<main>
+<section class="hero wrap" id="top"><div class="hero-copy"><div class="eyebrow">ИИ-контент · тексты · визуал</div><h1>Юлиана<br>Роуман</h1><p class="lead">Создаю контент с помощью ИИ, редактирую и довожу вручную. Смыслы, стиль, качество.</p><div class="hero-points"><span class="pill">Тексты с человеческой редактурой</span><span class="pill">Визуал для контента</span></div></div><div class="hero-visual"><img src="hero-workspace.jpg" alt="Рабочее пространство с ноутбуком и чашкой"></div></section>
+<section class="section wrap" id="about"><div class="intro-grid"><div class="section-copy"><div class="section-kicker">Мой подход</div><h2>ИИ помогает.<br>Редакторское чувство решает.</h2><div class="body"><p>Использую нейросети для скорости и идей.</p><p>Отбираю лучшее и проверяю факты.</p><p>Дорабатываю стиль и структуру вручную.</p><p>Результат — точный, понятный, живой контент.</p></div></div><div class="photo-panel"><img src="approach-notebook.jpg" alt="Блокнот с заметками о работе над текстом"></div></div></section>
+<section class="section services" id="services"><div class="wrap services-grid"><div class="section-copy"><div class="section-kicker">Чем могу помочь</div><h2>Что я могу сделать</h2><div class="service-list"><div><span>01</span>ИИ-статьи с ручной редактурой</div><div><span>02</span>Рерайт и доработка текстов</div><div><span>03</span>Редактура и вычитка</div><div><span>04</span>Генерация изображений и обложек</div></div></div><div class="services-photo"><img src="services-stilllife.jpg" alt="Спокойный рабочий натюрморт"></div></div></section>
+<section class="section wrap" id="process"><div class="process-grid"><div><div class="section-kicker">Понятный процесс</div><h2>Как устроена работа</h2><p style="color:var(--muted);line-height:1.7;margin-top:22px;max-width:340px">От первого брифа до готового контента — с вниманием к задаче на каждом этапе.</p></div><div class="steps"><article class="step"><div class="step-num">01 / БРИФ</div><h3>Материалы от заказчика</h3><p>Уточняю задачу, цели и собираю исходные данные.</p></article><article class="step"><div class="step-num">02 / ЧЕРНОВИК</div><h3>ИИ для идей и основы</h3><p>Использую нейросети, чтобы быстро наметить варианты и структуру.</p></article><article class="step"><div class="step-num">03 / РЕДАКТУРА</div><h3>Ручная проверка</h3><p>Проверяю факты, дорабатываю стиль и усиливаю материал.</p></article><article class="step"><div class="step-num">04 / РЕЗУЛЬТАТ</div><h3>Готовый контент</h3><p>Передаю согласованный материал в нужном формате.</p></article></div></div></section>
+<section class="section works" id="works"><div class="wrap"><div class="works-head"><div><div class="section-kicker">Для знакомства с подходом</div><h2>Примеры работ</h2></div><p>Демонстрационные примеры. Их можно заменить реальными работами и кейсами.</p></div><div class="work-grid"><article class="work"><img src="sample-article.jpg" alt="Пример статьи"><h3>Статья</h3><p>Демонстрационный пример до замены реальной работой.</p></article><article class="work"><img src="sample-rewrite.jpg" alt="Пример рерайта"><h3>Рерайт до/после</h3><p>Демонстрационный пример до замены реальной работой.</p></article><article class="work"><img src="sample-editing.jpg" alt="Пример редактуры"><h3>Редактура</h3><p>Демонстрационный пример до замены реальной работой.</p></article><article class="work"><img src="sample-ai-visual.jpg" alt="Пример AI-визуала"><h3>AI-изображение / обложка</h3><p>Демонстрационный пример до замены реальной работой.</p></article></div></div></section>
+<section class="section wrap" id="contact"><div class="contact-grid"><div><div class="section-kicker">Следующий шаг</div><h2>Обсудим вашу задачу</h2><p style="margin-top:22px;color:var(--muted);line-height:1.7">Чтобы начать, пришлите:</p><ul class="contact-list"><li>тему и цель проекта</li><li>аудиторию и ключевые сообщения</li><li>исходные материалы и ссылки</li><li>формат и объём контента</li><li>пожелания по стилю и срок</li></ul><p class="contact-note">Напишите — и я предложу лучшее решение.</p></div><div class="contact-photo"><img src="contact-stilllife.jpg" alt="Блокнот, чашка и веточка эвкалипта"></div></div></section>
+</main><footer><div class="wrap">Юлиана Роуман · ИИ-контент, тексты и визуал</div></footer></body></html>
