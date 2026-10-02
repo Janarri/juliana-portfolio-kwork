@@ -38,6 +38,46 @@ html{scroll-padding-top:52px}
  .approach,.services,.process,.contact{padding-bottom:52vh}
  .hero{background-size:cover;background-position:58% center}
 }
+
+/* Responsive correction after visual review */
+@media(max-width:900px){
+ header{height:44px;padding:0 4%;font-size:10px}
+ nav{gap:12px}
+ .page{height:auto;min-height:100svh;aspect-ratio:auto;padding:92px 7% 7%;display:flex;align-items:flex-start}
+ h1{font-size:clamp(54px,10vw,76px);line-height:.9}
+ h2{font-size:clamp(32px,6vw,44px)}
+ .small{font-size:14px;line-height:1.65}
+ .sub{font-size:17px;margin-top:20px}
+ .hero{min-height:100svh;padding-top:22vh;background-size:auto 100%;background-position:62% center}
+ .hero-copy{width:min(80%,440px)}
+ .hero:before{background:linear-gradient(90deg,rgba(248,246,240,.97) 0%,rgba(248,246,240,.88) 48%,rgba(248,246,240,.25) 100%)}
+ .approach,.services,.process,.contact{display:block;min-height:100svh;padding:12vh 7% 54vh;background-color:var(--bg);background-repeat:no-repeat;background-position:center,bottom center;background-size:100% 100%,100% 46%}
+ .approach{background-image:linear-gradient(var(--bg),var(--bg)),url('approach-notebook.jpg')}
+ .services{background-image:linear-gradient(var(--bg),var(--bg)),url('services-stilllife.jpg')}
+ .process{background-image:linear-gradient(var(--bg),var(--bg)),url('process-notebook.jpg')}
+ .contact{background-image:linear-gradient(var(--bg),var(--bg)),url('contact-stilllife.jpg')}
+ .approach-copy,.services-copy,.process-copy,.contact-copy{width:100%}
+ .approach h2,.services h2,.process h2,.contact h2{max-width:430px}
+ .service-list{font-size:15px;gap:12px;margin-top:22px}
+ .process-list{gap:14px}
+ .process-row{grid-template-columns:34px 1fr;gap:12px}
+ .num{width:30px;height:30px}
+ .process-row b{font-size:14px}
+ .process-row p{font-size:12px;line-height:1.5}
+ .works{min-height:auto;padding:90px 5% 70px}
+ .works .intro{font-size:13px;line-height:1.5}
+ .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .work img{height:clamp(120px,30vw,210px)}
+ .work h3{font-size:14px}
+ .work p{font-size:11px}
+}
+@media(max-width:480px){
+ header{align-items:center}header .brand{font-size:10px}nav{gap:7px;font-size:8px}
+ .page{padding-left:6%;padding-right:6%}
+ .hero-copy{width:90%}
+ .hero{background-position:58% center}
+ .work-grid{grid-template-columns:1fr 1fr}
+}
 </style></head>
 <body><header><a class="brand" href="#top">Юлиана Роуман</a><nav><a href="#approach">Подход</a><a href="#services">Услуги</a><a href="#process">Процесс</a><a href="#works">Примеры</a><a href="#contact">Контакт</a></nav></header><main>
 <section class="page hero" id="top"><div class="hero-copy"><h1>Юлиана<br>Роуман</h1><div class="sub">ИИ-контент, тексты и визуал</div><div class="rule"></div><div class="hero-lines small"><span>Создаю контент с помощью ИИ</span><span>Редактирую и довожу вручную</span><span>Смыслы, стиль, качество</span></div></div></section>
